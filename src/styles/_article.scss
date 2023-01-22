@@ -178,18 +178,29 @@
 }
 
 .share-link {
-  //background: url(./assets/icon-share.svg) no-repeat center center #ecf2f8;
   width: 32px;
   height: 32px;
-  display: inline-block;
   border-radius: 50%;
-
-  mask: url(./assets/icon-share.svg) no-repeat;
   background-color: #ecf2f8;
-  //background-color: #6e8098;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    mask: url(./assets/icon-share.svg) no-repeat center center;
+    background-color: #6e8098;
+    width: 15px;
+    height: 13px;
+    display: block;
+  }
 
   &:hover {
-    background-color: red;
+    background-color: #6e8098;
+
+    &:before {
+      background-color: #fff;
+    }
   }
 }
 
