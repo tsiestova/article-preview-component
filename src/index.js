@@ -41,35 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   app.init();
 });
-
-//
-// const init = () => {
-//   document.getElementById("btn-share").addEventListener("click", showModal);
-//   document.addEventListener("click", closeModals);
-//
-//   const article = document.getElementById("article");
-//
-
-//   const closeModals = (e) => {
-
-//     const container = document.querySelector(".social-network__container");
-//     const btn = document.getElementById("btn-share");
-//     const shareBtn = document.getElementById("article");
-//     const el = e.target;
-//
-//     if (
-//       el === container ||
-//       container.contains(el) ||
-//       btn === el ||
-//       btn.contains(el)
-//     ) {
-//       return;
-//     }
-//
-//     shareBtn.classList.remove("social-networks");
-//   };
-//
-//   const showModal = () => {
-//     article.classList.toggle("social-networks");
-//   };
-// };
