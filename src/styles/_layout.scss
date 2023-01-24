@@ -1,0 +1,12 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #ecf2f8;
+}
+
+.layout {
+  padding: 0 32px;
+
+  @include breakpoint(desktop) {
+    padding: 35px 40px 0 40px;
+  }
+}
